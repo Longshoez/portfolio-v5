@@ -1,0 +1,54 @@
+@import '../Components/sVariables'
+
+//Background style
+
+.noise
+    width: 100vw
+    height: 100vh
+    position: fixed
+    background-image: url('src/resources/noise.png')
+    transform: scale(1.1)
+    background-repeat: repeat
+    z-index: 2
+
+.Blob
+    width: calc( 1065px * .7)
+    height: calc( 589px * .7)
+    opacity: 0.15
+    filter: blur(150px)
+    position: fixed
+    animation: leBlobs 45s infinite
+    &:nth-of-type(1)
+        bottom: 0
+
+    &:nth-of-type(2)
+        top: 0
+        right: 0
+        animation: leBlobs 60s 2s infinite //adds delay to second blob
+
+@keyframes leBlobs
+    0%
+        filter: blur(150px)
+        transform: translate(0%, 0)
+    10%
+        filter: blur(180px)
+    20%
+        filter: blur(150px)
+        transform: translate(-50%, 0)
+    30%
+        filter: blur(125px)
+    40%
+        filter: blur(120px)
+        transform: translate(-25%, 0)
+    50%
+        filter: blur(125px)
+    60%
+        filter: blur(145px)
+        transform: translate(0%, -25%)
+    70%
+        filter: blur(125px)
+    80%
+        filter: blur(150px)
+        transform: translate(10%, 0%)
+    90%
+        filter: blur(130px)

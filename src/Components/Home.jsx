@@ -5,6 +5,7 @@ import Icon from './Icon'
 import '../Components/sHome.sass'
 import '../Components/sAbout.sass'
 import '../Components/sIcon.sass'
+import '../Components/sBackground.sass'
 
 const Content = () => {
     return (
