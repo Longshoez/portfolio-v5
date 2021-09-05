@@ -1,9 +1,12 @@
-@import './variables'
+@import './sVariables'
 
 //Content 1
 .mainContent
-  margin-top: 10rem
-  height: calc( 100vh - 10rem )
+  position: relative
+  border: 1px solid white
+  // margin-top: 10rem
+  // height: calc( 100vh - 10rem )
+  // height: 100vh
 
 h1
   font-size: 80px
@@ -20,12 +23,15 @@ h1
   background: none
   color: $font-color
   font-size: 22px
-  transition: .05s ease-in-out
+  transition: .15s ease-in-out
   cursor: pointer
   user-select: none
+  box-shadow: inset 0rem 0 0 0 white
   &:active
     background: none
-    filter: invert(50%)
+    // filter: invert(50%)
+    box-shadow: inset 100rem 0 0 0 white
+
   p
     display: inline
   svg
