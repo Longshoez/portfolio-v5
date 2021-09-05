@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
 $content-width: 80vw
+$bg-color: #0D0D0D //#c8f4cc
+$font-color: #D2D2D2 //#3c3c3c
+$slider1: #000000 //#b3dcb6
+$slider2: #1d1d1d //#7ac181
 
 html
-  background: #0D0D0D
+  background: $bg-color
+  color: $font-color
 
 .App
+  font-family: 'Mulish', sans-serif
   padding: 0
   margin: 0
   width: 100vw
@@ -12,13 +19,29 @@ html
   display: flex
   justify-content: center
 
+//Background style
+
 .noise
-  width: 100vw
-  height: 100vh
-  position: fixed
-  background-image: url('./resources/noise.png')
-  background-repeat: repeat
-  z-index: 2
+    width: 100vw
+    height: 100vh
+    position: fixed
+    background-image: url('./resources/noise.png')
+    background-repeat: repeat
+    z-index: 2
+
+.Blob
+    width: calc( 1065px *  .7)
+    height: calc( 589px *  .7)
+    opacity: 0.15
+    filter: blur(150px)
+    position: fixed
+    &:nth-of-type(1)
+      bottom: 0
+      
+    &:nth-of-type(2)
+      top:0
+      right: 0
+      
 
 .slider
   position: fixed
@@ -26,17 +49,21 @@ html
   top: 0
   width: 120px
   height: 100vh
-  border-left: 2px solid #000000
-  filter: drop-shadow(-2px 0px 0px #1d1d1d)
+  border-left: 2px solid $slider1
+  filter: drop-shadow(-2px 0px 0px $slider2)
 
 .section
-  margin: auto
   width: $content-width
   height: 100vh
   z-index: 100
 
+//Navigation bar
+
 nav
   position: fixed
+  font-weight: 400
+  font-size: 18px
+  margin-top: 2em
   width: inherit
 
 .navigationBar
@@ -47,31 +74,40 @@ li
   display: inline
   margin-right: 2em
   a
-    color: white
+    color: $font-color
     text-decoration: none
 
-.home-cntnt
-  //gotta center the shit out of that div, also remove the emojis
 
+//Content 1
+
+.mainContent
+  padding-top: 7rem
 
 h1
   font-size: 80px
-  color: #D2D2D2
+  font-weight: 900
+  color: $font-color
+  line-height: 100%
 
 .btn
   width: fit-content
-  border: 1px solid white
+  border: 2px solid $font-color
   padding: 1em
+  padding-top: 0.5em
+  padding-bottom: 0.5em
   background: none
-  color: white
-  font-size: 18px
+  color: $font-color
+  font-size: 22px
   transition: .05s ease-in-out
   cursor: pointer
   user-select: none
   &:active
-    background: white
-    color: black
+    background: none
+    filter: invert(50%)
   p
     display: inline
-  p:nth-child(2)
-    margin-left: 1em
+  svg
+    margin-left: 0.6em
+    color: $font-color
+    width: 10px
+    height: 15px
