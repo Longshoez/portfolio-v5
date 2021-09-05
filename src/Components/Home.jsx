@@ -1,6 +1,7 @@
 import React from 'react'
 import NavigationBar from './NavigationBar'
 import Button from './Button'
+import '../Components/Content.sass'
 
 const Content = () => {
     return (
@@ -12,7 +13,9 @@ const Content = () => {
                 {/* 🎨 💻 🚀*/}
                 <Button />
             </div>
-
+            <div className="About">
+                <img src="" alt="" />
+            </div>
         </div>
     )
 }

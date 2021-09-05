@@ -1,0 +1,37 @@
+@import './variables'
+
+//Content 1
+.mainContent
+  margin-top: 10rem
+  height: calc( 100vh - 10rem )
+
+h1
+  font-size: 80px
+  font-weight: 900
+  color: $font-color
+  line-height: 100%
+
+.btn
+  width: fit-content
+  border: 2px solid $font-color
+  padding: 1em
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+  background: none
+  color: $font-color
+  font-size: 22px
+  transition: .05s ease-in-out
+  cursor: pointer
+  user-select: none
+  &:active
+    background: none
+    filter: invert(50%)
+  p
+    display: inline
+  svg
+    margin-left: 0.6em
+    color: $font-color
+    width: 10px
+    height: 15px
+
+//Content 2
