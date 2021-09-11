@@ -12,27 +12,30 @@ html
   margin: 0
   width: 100vw
   height: 100vh
+  overflow-x: hidden
+  scroll-snap-type: y mandatory
   z-index: 1
-  display: flex
-  justify-content: center
 
 .section
+  scroll-snap-align: start
+  border: 1px solid transparent
   width: $content-width
   height: 100vh
+  margin-left: auto
+  margin-right: auto
   z-index: 100
 
 //Content 1
 .mainContent
   position: relative
   height: 100vh
-  // height: 100vh/
-  z-index: 1
+  // height: 100vh/;
+  z-index: 2
 
 h1
   padding-top: 3rem
-  font-size: 70px
+  font-size: $header-text-size
   font-weight: 500
   color: $font-color
   line-height: 100%
-  margin-bottom: 3.2rem
-  
+  margin-bottom: $btn-top-margin

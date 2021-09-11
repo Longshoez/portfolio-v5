@@ -1,27 +1,31 @@
 @import './sVariables'
 
 //Navigation bar
-nav    
-  position: absolute
-  width: 15rem
-  height: 100vh
-  right: 0  
-  font-weight: 400
-  font-size: $font-nav-size  
-  z-index: 2
-  border-left: 2px solid $border-c
-  box-shadow: -2px 0px 0px $border-c2
-  .navigationBar
-    padding-top: 5rem
+nav
+    position: fixed
+    width: $nav-width
+    height: 100vh
+    right: 0
+    font-weight: 400
+    font-size: $general-text-size
+    z-index: 2
+    border-left: 3px solid $border-c
+    box-shadow: -2px 0px 0px $border-c2
+
+.navigationBar
+    padding-top: $nav-top-padding
     text-align: right
-    margin-right: 2rem    
+    margin-right: 1rem
     li
         display: block
         margin-right: 3rem
-        margin-bottom: .5rem  
+        margin-bottom: .5rem
         justify-items: right
         a
             color: $font-thirdColor
-            text-decoration: none   
+            text-decoration: none
             &:active
                 color: $navActive
+
+.navigationItemActive
+    color: $navActive !important
