@@ -3,6 +3,8 @@
 html
   background: $bg-color
   color: $font-color
+  padding: 0
+  margin: 0
 
 .App
   font-family: $font
@@ -14,41 +16,23 @@ html
   display: flex
   justify-content: center
 
-.slider
-  position: fixed
-  right: 0
-  top: 0
-  width: 120px
-  height: 100vh
-  border-left: 2px solid $slider1
-  filter: drop-shadow(-2px 0px 0px $slider2)
-
 .section
   width: $content-width
+  height: 100vh
   z-index: 100
-  min-height: auto
-  .mainContent
-    height: 100vh
-  .About
-    height: 100vh
 
+//Content 1
+.mainContent
+  position: relative
+  height: 100vh
+  // height: 100vh/
+  z-index: 1
 
-//Navigation bar
-nav
-  position: fixed
-  font-weight: 400
-  font-size: 18px
-  margin-top: 2em
-  width: inherit
-
-.navigationBar
-  float: right
-  width: fit-content
-
-li
-  display: inline
-  margin-right: 2em
-  a
-    color: $font-color
-    text-decoration: none
-
+h1
+  padding-top: 3rem
+  font-size: 70px
+  font-weight: 500
+  color: $font-color
+  line-height: 100%
+  margin-bottom: 3.2rem
+  
