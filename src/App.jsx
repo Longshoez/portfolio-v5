@@ -6,7 +6,7 @@ import './App.sass'
 import './Components/sBackground.sass'
 import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
-import BioCard from './Components/BioCard'
+import ABioCard from './Components/ABioCard'
 
 function App() {
 
@@ -22,8 +22,8 @@ function App() {
         <Button message="Get in touch!" icon="envelope" />
       </section>
 
-      <section className="section mainContent">        
-        <BioCard
+      <section className="section aboutContent">        
+        <ABioCard
           head="Nice to meet you!"
           pic="src\resources\profile pic 2.jpg"
           bio="My name is Gabriel, im a Software engineer student from México and i do Web development on my free time, i’m also a self taught UI and Web designer."

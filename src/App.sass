@@ -16,6 +16,10 @@ html
   scroll-snap-type: y mandatory
   z-index: 1
 
+//for the main section, bc the big text messes with the top padding
+.section:nth-of-type(1)
+  padding-top: 6rem !important
+
 .section
   scroll-snap-align: start
   border: 1px solid transparent
@@ -24,7 +28,7 @@ html
   margin-left: auto
   margin-right: auto
   z-index: 100
-  padding-top: 3rem
+  padding-top: 12rem
 
 //Content 1
 .mainContent
@@ -32,6 +36,8 @@ html
   height: 100vh
   // height: 100vh/;
   z-index: 2
+
+
 
 h1  
   font-size: var(--header-text-size)
