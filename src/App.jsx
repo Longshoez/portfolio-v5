@@ -32,6 +32,14 @@ function App() {
         />
       </section>
 
+      <section className="section aboutContent">        
+        <Button message="Carousel" />
+      </section>
+
+      <section className="section aboutContent">        
+        <Button message="Full screen footer" />
+      </section>
+
       <Background />
     </div>
   )

@@ -1,38 +1,41 @@
 //Default color scheme
 :root {    
     --font: 'Mulish', sans-serif;    
-    --header-text-size: 70px;
+    --content-width: 75vw;
+    --bg-color: white;
+    --font-color: #777777;
+    --font-secColor: #777777;
+    --font-thirdColor: #777777;
+
+    --header-text-size: 100px;
     --big-text-size: 50px;
     --general-text-size: 25px;
-    --small-text-size: 10px;
+    --small-text-size: 20px;
     --light: 300;
     --regular: 400;
     --semi-bold: 600;
     --bold: 700;    
-
+    
     --nav-top-padding: 5rem;
-    --nav-width: 12rem;
+    --nav-width: 15rem;
     --nav-links-pading: 1rem;
+    --border-c: white; //Navigation Bar;
+    --border-c2: #c8c8c86b;
+    --navActive: white;    
 
-    --btn-icon-size: 15px;
-    --btn-icon-size-small: 10px;
-    --btn-top-margin: 3.2rem;
+    --btn-icon-size: 17px;
+    --btn-icon-size-small: 15px;
+    --btn-top-margin: 4rem;
     --btn-border-color: #AFAFAF;
-    --btn-border-color-f:  rgba(175, 175, 175, 0.9);
+    --btn-border-color-f:  #b0b0b0e6;
 
-    --content-width: 75vw;
-    --bg-color: white;
+
     --blob-color: #1400FF;
     --blob2-color: #68FB0F;
     --blob-opacity: 0.35;
     --blob-sizeX:calc( 1065px * .6);
     --blob-sizeY: calc( 589px * .6);
-    --font-color: #777777;
-    --font-secColor: #777777;
-    --font-thirdColor: #777777;
-    --border-c: white; //Navigation Bar;
-    --border-c2: #c8c8c86b;
-    --navActive: white;    
+
 }
 //Dark color scheme
 @media (prefers-color-scheme: dark) {
@@ -51,10 +54,30 @@
     }
 }
 
+//2k
+@media only screen and (min-width: 2048px) {
+    :root {
+        /*--header-text-size: 120px !important;
+        --general-text-size: 35px !important;
+        --small-text-size: 25px !important;
+
+        --nav-top-padding: 7rem !important;
+        --nav-links-pading: 4rem !important;
+        --nav-width: 20rem !important;
+
+        --btn-icon-size: 25px !important;
+        --btn-top-margin: 7rem;
+        --btn-icon-size-small: 17px;
+
+        --blob-sizeX:calc( 1065px * 1.2);
+        --blob-sizeY: calc( 589px * 1.2);*/
+    }
+}
+
 //1080
 @media only screen and (min-width: 1920px) {
     :root {
-        --header-text-size: 100px;
+        /*--header-text-size: 100px;
         --general-text-size: 25px;
         --small-text-size: 20px;
 
@@ -67,25 +90,6 @@
         --btn-icon-size-small: 18px;
 
         --blob-sizeX:calc( 1065px * .9);
-        --blob-sizeY: calc( 589px * .9);
-    }
-}
-//2k
-@media only screen and (min-width: 2048px) {
-    :root {
-        --header-text-size: 120px;
-        --general-text-size: 25px;
-        --small-text-size: 20px;
-        --nav-top-padding: 7rem;
-
-        --nav-links-pading: 4rem;
-        --nav-width: 20rem;
-
-        --btn-icon-size: 20px;
-        --btn-top-margin: 7rem;
-        --btn-icon-size-small: 17px;
-
-        --blob-sizeX:calc( 1065px * 1.2);
-        --blob-sizeY: calc( 589px * 1.2);
+        --blob-sizeY: calc( 589px * .9);*/
     }
 }
