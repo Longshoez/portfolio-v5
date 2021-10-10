@@ -1,13 +1,13 @@
 @import './Components/sVariables'
 
 html
-  background: $bg-color
-  color: $font-color
+  background: var(--bg-color)
+  color: var(--font-color)
   padding: 0
   margin: 0
 
 .App
-  font-family: $font
+  font-family: var(--font)
   padding: 0
   margin: 0
   width: 100vw
@@ -19,7 +19,7 @@ html
 .section
   scroll-snap-align: start
   border: 1px solid transparent
-  width: $content-width
+  width: var(--content-width)
   height: 100vh
   margin-left: auto
   margin-right: auto
@@ -34,8 +34,42 @@ html
 
 h1
   padding-top: 3rem
-  font-size: $header-text-size
+  font-size: var(--header-text-size)
   font-weight: 500
-  color: $font-color
+  color: var(--font-color)
   line-height: 100%
-  margin-bottom: $btn-top-margin
+  margin-bottom: var(--btn-top-margin)
+  animation: fadeSlideIn 1.25s 1 ease-out
+  transform: translateX(0%)
+
+nav
+  animation: fadeInNav 1.3s 1 ease-out  
+
+.btn  
+  animation: slideInBtn 1.4s 1 ease-out  
+
+@keyframes fadeSlideIn
+  0%
+    opacity: 0%
+    transform: translateX(-10%)
+  100%
+    opacity: 100%
+    transform: translateX(0%)
+
+
+@keyframes slideInBtn
+  0%
+    opacity: 0%
+    transform: translateX(-60%)
+  100%
+    opacity: 100%
+    transform: translateX(0%)
+
+
+@keyframes fadeInNav
+  0%
+    visibility: hidden
+    transform: translateX(100%)
+  100%
+    visibility: initial
+    transform: translateX(0%)

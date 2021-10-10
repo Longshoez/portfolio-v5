@@ -3,29 +3,29 @@
 //Navigation bar
 nav
     position: fixed
-    width: $nav-width
+    width: var(--nav-width)
     height: 100vh
     right: 0
     font-weight: 400
-    font-size: $general-text-size
+    font-size: var(--general-text-size)
     z-index: 2
-    border-left: 3px solid $border-c
-    box-shadow: -2px 0px 0px $border-c2
+    border-left: 3px solid var(--border-c)
+    box-shadow: -2px 0px 0px var(--border-c2)
 
 .navigationBar
-    padding-top: $nav-top-padding
+    padding-top: var(--nav-top-padding)
     text-align: right
-    margin-right: 1rem
+    margin-right: var(--nav-links-pading)
     li
         display: block
         margin-right: 3rem
         margin-bottom: .5rem
         justify-items: right
         a
-            color: $font-thirdColor
+            color: var(--font-thirdColor)
             text-decoration: none
             &:active
-                color: $navActive
+                color: var(--navActive)
 
 .navigationItemActive
-    color: $navActive !important
+    color: var(--navActive !important)
