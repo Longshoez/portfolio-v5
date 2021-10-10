@@ -1,8 +1,16 @@
+//Default color scheme
 :root {    
-    --font: 'Mulish', sans-serif;
+    --font: 'Mulish', sans-serif;    
     --header-text-size: 70px;
+    --big-text-size: 50px;
+    --general-text-size: 20px;
     --general-text-size: 20px;
     --small-text-size: 15px;
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 600;
+    --bold: 700;    
+
     --nav-top-padding: 5rem;
     --nav-width: 12rem;
     --nav-links-pading: 1rem;
@@ -11,6 +19,11 @@
 
     --content-width: 75vw;
     --bg-color: white;
+    --blob-color: #1400FF;
+    --blob2-color: #68FB0F;
+    --blob-opacity: 0.35;
+    --blob-sizeX:calc( 1065px * .6);
+    --blob-sizeY: calc( 589px * .6);
     --font-color: #777777;
     --font-secColor: #777777;
     --font-thirdColor: #777777;
@@ -18,10 +31,13 @@
     --border-c2: #c8c8c86b;
     --navActive: white;
 }
-
+//Dark color scheme
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #141414;
+        --blob-color: white;
+        --blob2-color: white;      
+        --blob-opacity: 0.10;        ;
         --font-color: #FFFFFF;
         --font-secColor: #AFAFAF;
         --font-thirdColor: #787878;
@@ -29,20 +45,6 @@
         --border-c: #161616;
         --border-c2: #3f3f3f;
         --navActive: white;
-    }
-}
-
-@media (min-width: 2350px) //*2560 -> 2k - 160em*/
-
-    {
-    :root {
-        --header-text-size: 130px;
-        --general-text-size: 35px;
-        --small-text-size: 15px;
-        --nav-top-padding: 10rem;
-        --nav-width: 20rem;
-        --btn-icon-size: 24px;
-        --btn-top-margin: 5rem;
     }
 }
 
@@ -57,6 +59,8 @@
         --nav-width: 18rem;
         --btn-icon-size: 22px;
         --btn-top-margin: 5rem;
+        --blob-sizeX:calc( 1065px * .9);
+        --blob-sizeY: calc( 589px * .9);
     }
 }
 //2k
@@ -70,5 +74,8 @@
         --nav-width: 20rem;
         --btn-icon-size: 20px;
         --btn-top-margin: 7rem;
+
+        --blob-sizeX:calc( 1065px * 1.2);
+        --blob-sizeY: calc( 589px * 1.2);
     }
 }
