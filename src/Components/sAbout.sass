@@ -1,5 +1,10 @@
 @import './sVariables'
 
+div
+    &:nth-of-type(2)
+        margin-bottom: var(--btn-top-margin) 
+        
+
 .bioCard
     display: flex
     .aboutImage
@@ -22,9 +27,13 @@
         p
             font-size: var(--general-text-size)
             font-weight: var(--light)
-    div:nth-child(2)>.btn
-        font-size: var(--small-text-size)
+    
+.dynamicCounterContainer
+    display: flex    
+    width: fit-content    
 
-div
-    &:nth-of-type(2) //selects second div (dynamic counters)
-        margin-bottom: var(--btn-top-margin)
+.techOnProjects    
+    height: 10rem
+    border: 1px solid blue
+    h1
+        font-size: var(--big-text-size)        

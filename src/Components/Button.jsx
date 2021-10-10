@@ -55,12 +55,12 @@ const Button = (props) => {
     return (
 
         iconLean === 'right' ? (
-            <div className="btn">
+            <div className={`btn ${props.size}`}>
                 <p>{props.message}</p>
                 {renderIcon(props.icon)}
             </div>
         ) : (
-            <div className="btn">
+            <div className={`btn ${props.size}`}>
                 {renderIcon(props.icon)}
                 <p>{props.message}</p>
             </div>
@@ -71,7 +71,8 @@ const Button = (props) => {
 Button.defaultProps = {
     message: "A button",
     icon: "chevron-right",
-    lean: "right"
+    lean: "right",
+    size: ""
 }
 
 export default Button

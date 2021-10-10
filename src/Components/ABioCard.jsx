@@ -13,14 +13,20 @@ const AboutBioCard = (props) => {
                 <div>
                     <h1>{props.head} </h1>
                     <p>{props.bio}</p>
-                    <Button message={props.btnTxt} icon={props.btnIcon} />
+                    <Button message={props.btnTxt} icon={props.btnIcon} size="small"/>
                 </div>
             </div>
-            <div>
-                <AboutDynamicCounter 
-                    count="2"
-                    label="Colaborations"
-                />
+            <div className="dynamicCounterContainer">
+                <AboutDynamicCounter count="5" label="Colaborations"/>
+                <AboutDynamicCounter count="25" label="Designs"/>
+                <AboutDynamicCounter count="5" label="Websites"/>
+                <AboutDynamicCounter count="1" label="App"/>
+                <AboutDynamicCounter count="1y+" label="Experience"/>
+                <AboutDynamicCounter count="2" label="Live projects"/>
+            </div>
+            <div className="techOnProjects">
+                <h1>Tech i use on my projects</h1>
+                <Icon />
             </div>
         </>
     )
