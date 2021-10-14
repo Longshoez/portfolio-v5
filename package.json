@@ -9,6 +9,7 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-tilt": "^0.1.4",
     "sass": "^1.39.0"
   },
   "devDependencies": {

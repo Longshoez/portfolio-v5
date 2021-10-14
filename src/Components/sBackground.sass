@@ -12,7 +12,7 @@
     filter: contrast(180%)
     background-repeat: repeat
     opacity: 1
-    z-index: 1 !important
+    z-index: 5 !important
 
 .Blob
     user-select: none
@@ -23,14 +23,15 @@
     position: fixed
     opacity: var(--blob-opacity)
     animation: leBlobs 45s infinite ease-in
-    animation: fadeInAnim 10s once ease-in
+    //animation: fadeInAnim 10s once ease-in
+    z-index: 3 !important
     &:nth-of-type(1)
         bottom: 0
     &:nth-of-type(2)
         top: 0
         right: 0
-        animation: leBlobs 60s 2s infinite //adds delay to second blob
-        animation: fadeInAnim 5s 1 ease-in
+        animation: leBlobs 60s infinite ease-in //adds delay to second blob
+        //animation: fadeInAnim 5s 1 ease-in
     path
         fill: var(--blob-color)         
 
