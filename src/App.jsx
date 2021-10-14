@@ -23,7 +23,7 @@ function App() {
         <section className="section mainContent Tilt-inner" id="home">
           <h1>I design, code and <br /> launch Websites and <br /> apps, amongst other <br />things.</h1>
           {/* 🎨 💻 🚀*/}
-          <Button message="Get in touch!" icon="envelope" />
+          <Button message="Get in touch!" icon="envelope" link="mailto:gabrielalejandro.br99@gmail.com?subject=I'd like to schedule a meeting&body=First we'd like for you to tell us about you or your project"/>
         </section>
 
         <section className="section aboutContent" id="about">
