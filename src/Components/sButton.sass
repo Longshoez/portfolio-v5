@@ -10,14 +10,20 @@
   padding-bottom: 0.5em
   background: none
   color: var(--font-secColor)
-  font-size: var(--general-text-size)
-  transition: .10s ease-in-out
+  font-size: var(--general-text-size)  
   cursor: pointer
   user-select: none
+  z-index: var(--content-z-index) !important
   //margin: 0.5rem  
-  &:active
-    border-color: #c4c4c4
-    background: #c4c4c4
+  &:hover
+    transition: .25s ease-in-out
+    filter: brightness(300%)
+  &:active  
+    //border-color: #c4c4c4
+    //background: #c4c4c4
+    filter: brightness(80%)
+    background: #88888825
+    //#c4c4c4
 
   p
     display: inline
@@ -35,9 +41,9 @@
   padding-top: 0em
   padding-bottom: 0.25em
   padding-left: .3em
-  padding-right: .2em
+  padding-right: .2em  
   p
-    font-size: var(--small-text-size) !important
+    font-size: var(--small-text-size) !important    
   svg
     width: var(--btn-icon-size-small) !important
     height: var(--btn-icon-size-small) !important

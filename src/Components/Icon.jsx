@@ -152,15 +152,25 @@ const Icon = (props) => {
         }
     }
 
+    const openLink = (e) =>{
+        e.preventDefault();
+        if (props.link)
+            window.open(props.link)
+        else
+        console.log("nothing to open")
+    }
+
     return (
-        <div className="Icon">
+        <div className="Icon" onClick={openLink} tooltip={props.tooltip}>
             {renderIcon(props.icon)}
         </div>
     )
 }
 
 Icon.defaultProps = {
-    icon: "HTML"
+    icon: "HTML",
+    link: "",
+    tooltip:"",
 }
 
 export default Icon

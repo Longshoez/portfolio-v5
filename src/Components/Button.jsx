@@ -52,15 +52,25 @@ const Button = (props) => {
         }
     }
 
-    return (
+    const openLink = (e) =>{
+        e.preventDefault(); //prevents the origin page to load for some reason        
+        if (props.link) {            
+            window.open(props.link)
+        }else{
+            console.log("Nothin to open")
+        }
+        
+    }
+
+    return (        
 
         iconLean === 'right' ? (
-            <div className={`btn ${props.size}`}>
+            <div className={`btn ${props.size}`} onClick={openLink}>
                 <p>{props.message}</p>
                 {renderIcon(props.icon)}
             </div>
         ) : (
-            <div className={`btn ${props.size}`}>
+            <div className={`btn ${props.size}`} onClick={openLink}>
                 {renderIcon(props.icon)}
                 <p>{props.message}</p>
             </div>
@@ -72,7 +82,8 @@ Button.defaultProps = {
     message: "A button",
     icon: "chevron-right",
     lean: "right",
-    size: ""
+    size: "",
+    link: "",
 }
 
 export default Button

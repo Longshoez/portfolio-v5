@@ -1,42 +1,24 @@
 import React from 'react'
 import Button from './Button'
 import './sCarousel.sass'
+import barbershop from '../resources/carousel-pics/barbershop.png'
 
-const CCarousel = (props) => {
+const CCarousel = () => {
     return (
         <div className="carousel">
-            <h1></h1>
-            <p></p>
-            <div>
-                <Button message={props.btnTxt} icon={props.btnIcon} size="small" />
-                <Button message={props.btnTxt} icon={props.btnIcon} size="small" />
-                <Button message={props.btnTxt} icon={props.btnIcon} size="small" />
-                <Button message={props.btnTxt} icon={props.btnIcon} size="small" />
+            <div className="data">
+            <h1>Mende’z Barbershop</h1>
+            <p>I designed the website for a local barbershop, where they could showcase their services, the bigger picture was to develop an appointment system that would double as an ecomerce solution...</p>
+            <div className="c-buttons">
+                <Button message={"more"} icon={"plus"} size="small"/>
+                <Button message={"working demo"} icon={"open"} size="small" link="https://barbershop-plum.vercel.app/" />
+                <Button message={"previous"} icon={"chevron-left"} lean={"left"} size="small" />
+                <Button message={"next proyect"} icon={"chevron-right"} size="small" />
             </div>
-
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="..." class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="..." class="d-block w-100 c-img" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100 c-img" alt="..." />
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-
+            <img src={barbershop} alt="" />
         </div>
+            
     )
 }
 

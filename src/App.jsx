@@ -8,6 +8,8 @@ import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
 import ABioCard from './Components/ABioCard'
 import CCarousel from './Components/CCarousel'
+import Footer from './Components/Footer'
+
 import pic from './resources/profile pic 2.jpg'
 
 function App() {
@@ -39,7 +41,7 @@ function App() {
         </section>
 
         <section className="section aboutContent" id="contact">
-          <Button message="Full screen footer" />
+          <Footer></Footer>
         </section>
 
         <Background />
