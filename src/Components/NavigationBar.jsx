@@ -2,7 +2,9 @@ import React from 'react'
 
 const NavigationBar = () => {
 
-    
+    const highlightNav = () => {
+        
+    }
 
     return (
         <nav>

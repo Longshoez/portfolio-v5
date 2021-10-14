@@ -7,6 +7,8 @@ import './Components/sBackground.sass'
 import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
 import ABioCard from './Components/ABioCard'
+import CCarousel from './Components/CCarousel'
+import pic from './resources/profile pic 2.jpg'
 
 function App() {
 
@@ -25,7 +27,7 @@ function App() {
         <section className="section aboutContent" id="about">
           <ABioCard
             head="Nice to meet you!"
-            pic="src\resources\profile pic 2.jpg"
+            pic={pic}
             bio="My name is Gabriel, im a Software engineer student from México and i do Web development on my free time, i’m also a self taught UI and Web designer."
             btnTxt="More"
             btnIcon="plus"
@@ -33,7 +35,7 @@ function App() {
         </section>
 
         <section className="section aboutContent" id="work">
-          <Button message="Carousel" />
+          <CCarousel></CCarousel>
         </section>
 
         <section className="section aboutContent" id="contact">
