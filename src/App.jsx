@@ -12,9 +12,7 @@ import Footer from './Components/Footer'
 
 import pic from './resources/profile-pic.jpg'
 
-function App() {
-
-
+function App() {    
 
   return (
     <div className="App">

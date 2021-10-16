@@ -1,10 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 const NavigationBar = () => {
-
-    const highlightNav = () => {
-        
-    }
 
     return (
         <nav>
