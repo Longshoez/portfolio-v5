@@ -10,7 +10,7 @@ import ABioCard from './Components/ABioCard'
 import CCarousel from './Components/CCarousel'
 import Footer from './Components/Footer'
 
-import pic from './resources/profile pic 2.jpg'
+import pic from './resources/profile-pic.jpg'
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
             bio="My name is Gabriel, im a Software engineer student from México and i do Web development on my free time, i’m also a self taught UI and Web designer."
             btnTxt="More"
             btnIcon="plus"
-          />
+            />
         </section>
 
         <section className="section aboutContent" id="work">
@@ -44,7 +44,7 @@ function App() {
           <Footer></Footer>
         </section>
 
-        <Background />
+        <Background></Background>
     </div>
   )
 }

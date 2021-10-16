@@ -8,16 +8,15 @@ const Footer = () => {
             <div className="socials">
                 <h1>Social <br />networks</h1>
                 <div className="icons">
-                    <Icon icon="Dribbble" tooltip="Dribble" />
-                    <Icon icon="Twitter" tooltip="Dribble" />
-                    <Icon icon="Instagram" tooltip="Dribble" />
-                    <Icon icon="Github" tooltip="Dribble" link="https://dribbble.com/gabrielll"/>
-                    <Icon icon="Linkedin" tooltip="Dribble" /> {/*has tooltip? tooltip != "" , tooltipText={props.tooltip} */}
+                    <Icon icon="Dribbble" tooltip="Dribble" link="https://dribbble.com/gabrielll"/>
+                    <Icon icon="Twitter" tooltip="Dribble" link="https://twitter.com/yorqk" />
+                    <Icon icon="Instagram" tooltip="Dribble" link="https://www.instagram.com/g43ri3l"/>
+                    <Icon icon="Github" tooltip="Github" link="https://github.com/Longshoez"/>
+                    <Icon icon="Linkedin" tooltip="Linkedin" link="https://www.linkedin.com/in/devgabs" /> {/*has tooltip? tooltip != "" , tooltipText={props.tooltip} */}
                 </div>
                 <div className="icons">
-                    <Icon icon="" tooltip="Dribble" />
-                    <Icon icon="" tooltip="Dribble" />
-                    <Icon icon="" tooltip="Dribble" />
+                    <Icon icon="Youtube" tooltip="Youtube" link="https://www.youtube.com/channel/UC9CmAPTsstaDQ203AsQPJCw"/>
+                    <Icon icon="Soundcloud" tooltip="Sonudcloud" />                    
                 </div>
             </div>
 
