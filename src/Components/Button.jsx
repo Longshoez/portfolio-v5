@@ -1,5 +1,7 @@
 import React from 'react'
+import { isMobile } from 'react-device-detect'
 import '../Components/sButton.sass'
+import '../Components/responsiveMobile.sass'
 
 const Button = (props) => {
 
@@ -62,10 +64,13 @@ const Button = (props) => {
         
     }
 
+    const smallBtnResponsive = `${props.size}BtnMobile`
+    const defaultBtnStyle = `btn ${smallBtnResponsive}` 
+
     return (        
 
         iconLean === 'right' ? (
-            <div className={`btn ${props.size}`} onClick={openLink}>
+            <div className={isMobile ? `mobileBtn ${defaultBtnStyle}` : `${defaultBtnStyle}`} onClick={openLink}>
                 <p>{props.message}</p>
                 {renderIcon(props.icon)}
             </div>

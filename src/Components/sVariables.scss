@@ -19,6 +19,13 @@
     --bold: 700;
     --content-z-index: 10 !important;
 
+    //Texts Mobile
+    --header-text-size-m: 8vw;
+    --big-text-size-m: 10vw;
+    --general-text-size-m: 5vw;
+    --small-text-size-m: 4vw;    
+    --content-z-index-m: 10 !important;
+
     //media
     --prf-img-width: 12vw;
     --prf-img-height: 15vw;
@@ -40,6 +47,13 @@
     --btn-top-margin2: 2vw;
     --btn-border-color: #8d8d8d;
     --btn-border-color-f: #b0b0b0e6;
+    
+    //Buttons mobile
+    --btn-icon-size-m: 4vw;
+    
+    --btn-icon-size-small-m: 3vw;
+    --btn-top-margin-m: 4vw;
+    --btn-top-margin2-m: 2vw;
 
     //blobs
     --blob-color: #1400FF;
@@ -74,4 +88,3 @@
         --noise-opacity: .55;        
     }
 }
-

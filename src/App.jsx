@@ -9,15 +9,22 @@ import './App.sass'
 import './Components/sBackground.sass'
 import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
-import './Components/responsiveMobile.css'
+import './Components/responsiveMobile.sass'
 
 import pic from './resources/profile-pic.jpg'
+import Icon from './Components/Icon'
+import { isMobile, MobileView, BrowserView } from 'react-device-detect'
 
 function App() {    
 
   useEffect(()=>{
-   console.log("https://fontawesome.com/license")
+    console.log("https://fontawesome.com/license")
+    console.log(isMobile)
+    isMobile ? alert("This is a work in progress") : null
   }, []) 
+
+  const defaultStyle1 = "section mainContent"
+  const defaultStyle2 = "section aboutContent"  
 
   return (
     <div className="App">
@@ -25,13 +32,26 @@ function App() {
         <div className='content'>
         <NavigationBar />
 
-        <section className="section mainContent Tilt-inner" id="home">
-          <h1>I design, code and <br /> launch Websites and <br /> apps, amongst other <br />things.</h1>
-          {/* 🎨 💻 🚀*/}
+        <section className={isMobile ? `mobileSections ${defaultStyle1}` : `${defaultStyle1}`} id="home">
+          <BrowserView>          
+            {/**work on this, too many ands */}
+            <h1>I design, code and <br /> launch Websites and <br /> apps, amongst other <br />things.</h1>            
+          </BrowserView>
+
+          <MobileView>
+            <h1>I design, code, <br />launch Websites <br /> and apps, amongst other things.</h1>            
+          </MobileView>
+          
           <Button message="Get in touch!" icon="envelope" link="mailto:gabrielalejandro.br99@gmail.com?subject=I'd like to schedule a meeting&body=First we'd like for you to tell us about you or your project"/>
+          <MobileView>                                                
+            <div style={{listStyle: 'none'}} className='arrowDown' href="#about">
+              <Icon icon="Arrow Down" to oltip="Read More" link="" hasBorder={false}/>              
+            </div>
+          </MobileView>
+
         </section>
 
-        <section className="section aboutContent" id="about">
+        <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="about">
           <ABioCard
             head="Nice to meet you!"
             pic={pic}
@@ -41,11 +61,11 @@ function App() {
             />
         </section>
 
-        <section className="section aboutContent" id="work">
+        <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="work">
           <CCarousel></CCarousel>
         </section>
 
-        <section className="section aboutContent" id="contact">
+        <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="contact">
           <Footer></Footer>
         </section>
         </div>

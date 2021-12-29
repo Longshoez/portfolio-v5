@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from './Icon'
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const NavigationBar = () => {
 
@@ -16,7 +16,7 @@ const NavigationBar = () => {
                 <MobileView>
                     <li>
                         <a href="#contact">
-                            <Icon icon="Menu" tooltip="Menu" link=""/>
+                            <Icon icon="Menu" tooltip="Menu" link="" />
                         </a>
                     </li>        
                 </MobileView>                                

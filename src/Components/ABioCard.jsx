@@ -3,13 +3,20 @@ import Button from './Button'
 import './sAbout.sass'
 import AboutDynamicCounter from './ADynamicCounters'
 import Icon from './Icon'
+import { isMobile } from 'react-device-detect'
+import './responsiveMobile.sass'
 
 const AboutBioCard = (props) => {
+
+    const aboutDefault = "aboutBio"
+    const bioCardDefault = "bioCard"  
+    const aboutImageDefault = "aboutImage"      
+
     return (
         <>
-            <div className="aboutBio">
-                <div className="bioCard">
-                    <div className="aboutImage">
+            <div className={isMobile ? `${aboutDefault}` : `${aboutDefault}`}>
+                <div className={isMobile ? `${bioCardDefault}` : `${bioCardDefault}`}>
+                    <div className={isMobile ? `${aboutImageDefault}` : `${aboutImageDefault}`}>
                         <img src={props.pic} alt="" />
                     </div>
                     <div>

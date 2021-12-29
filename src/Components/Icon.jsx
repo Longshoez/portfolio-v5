@@ -1,5 +1,7 @@
 import React from 'react'
+import { isMobile } from 'react-device-detect'
 import './aIcons.sass'
+
 const Icon = (props) => {
 
     const renderIcon = () => {
@@ -186,8 +188,15 @@ const Icon = (props) => {
                 break;
             case "Menu":
                 return (
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+                    </svg>
+                )
+                break;
+            case "Arrow Down":
+                return (
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path>
                     </svg>
                 )
                 break;
@@ -198,8 +207,8 @@ const Icon = (props) => {
                     </svg>
                 )
                 break;
+            }
         }
-    }
 
     const openLink = (e) => {
         e.preventDefault();
@@ -209,8 +218,11 @@ const Icon = (props) => {
             console.log("nothing to open")
     }
 
+    const HasBorder = props.hasBorder ? "hasBorder" : ""
+    const defaultStyle = `Icon ${HasBorder}`
+
     return (
-        <div className="Icon" onClick={openLink} tooltip={props.tooltip}>
+        <div className={isMobile ? `mobileIcon ${defaultStyle}` : `${defaultStyle}`} onClick={openLink} tooltip={props.tooltip}>
             {renderIcon(props.icon)}
         </div>
     )
@@ -220,6 +232,7 @@ Icon.defaultProps = {
     icon: "HTML",
     link: "",
     tooltip: "",
+    hasBorder: true,
 }
 
 export default Icon
