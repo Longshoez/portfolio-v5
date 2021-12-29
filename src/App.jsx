@@ -2,13 +2,13 @@ import React from 'react'
 import NavigationBar from './Components/NavigationBar'
 import Background from './Components/Background'
 import Button from './Components/Button'
+import ABioCard from './Components/ABioCard'
+import CCarousel from './Components/CCarousel'
+import Footer from './Components/Footer'
 import './App.sass'
 import './Components/sBackground.sass'
 import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
-import ABioCard from './Components/ABioCard'
-import CCarousel from './Components/CCarousel'
-import Footer from './Components/Footer'
 
 import pic from './resources/profile-pic.jpg'
 
@@ -16,6 +16,8 @@ function App() {
 
   return (
     <div className="App">
+
+        <div className='content'>
         <NavigationBar />
 
         <section className="section mainContent Tilt-inner" id="home">
@@ -41,6 +43,7 @@ function App() {
         <section className="section aboutContent" id="contact">
           <Footer></Footer>
         </section>
+        </div>
 
         <Background></Background>
     </div>

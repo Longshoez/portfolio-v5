@@ -13,13 +13,16 @@ html
   width: 100vw
   height: 100vh
   overflow-x: hidden
+  overflow-y: scroll
   scroll-snap-type: y mandatory
   scroll-behavior: smooth !important
-  z-index: 1
 
   //for the main section, bc the big text messes with the top padding
   .section:nth-of-type(1)
     //padding-top: 6rem !important
+
+  .conetnt
+    z-index: 2    
 
   .section
     scroll-snap-align: start
@@ -27,13 +30,15 @@ html
     width: var(--content-width)
     height: 100vh !important
     margin-left: auto
-    margin-right: auto
-    z-index: 100
+    margin-right: auto    
     display: flex
     flex-direction: column
     justify-content: center
     align-items: left
-    //padding-top: 12rem
+    z-index: 1
+    border-right: 3px solid var(--border-c)
+    box-shadow: 2px 0px 0px var(--border-c2)
+    //padding-top: 12rem    
 
   .transition-obj:hover
     transition: .25s ease-in-out !important

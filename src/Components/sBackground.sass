@@ -1,6 +1,9 @@
 @import './sVariables'
 //Background style
 
+.background
+    z-index: 0
+
 .noise    
     position: fixed
     left: 0
@@ -9,10 +12,10 @@
     height: 100vh
     background-image: url('../resources/noise.png')
     background-repeat: repeat !important        
-    ansform: scale(0.05)
-    //filter: contrast(200%)
-    opacity: .7
-    //opacity: .05
+    transform: 1
+    opacity: var(--noise-opacity)
+    z-index: -1    
+
 
 .Blob
     user-select: none
@@ -24,7 +27,7 @@
     opacity: var(--blob-opacity)
     animation: leBlobs 45s infinite ease-in
     //animation: fadeInAnim 10s once ease-in
-    z-index: 1 !important
+    z-index: -1
     &:nth-of-type(1)
         bottom: 0
     &:nth-of-type(2)

@@ -27,7 +27,7 @@
 
     //Nav
     --nav-top-padding: 5vw;
-    --nav-width: 13vw;
+    --nav-width: auto;
     --nav-links-pading: 1.5vw;
     --border-c: white; //Navigation Bar;
     --border-c2: #c8c8c86b;
@@ -44,9 +44,13 @@
     //blobs
     --blob-color: #1400FF;
     --blob2-color: #68FB0F;
-    --blob-opacity: 0.35;
+    --blob-opacity: 0.5;
     --blob-sizeX: calc(60vw * .6);
     --blob-sizeY: calc(35vw * .6);
+
+    //noise
+    --noise-opacity: 1;
+    --noise-size: 1.5;
 
 }
 
@@ -63,8 +67,11 @@
         --font-thirdColor: #787878;
         //*Navigation Bar*/;
         --border-c: #161616;
-        --border-c2: #3f3f3f;
+        --border-c2: #242424;
         --navActive: white;
+
+        //noise
+        --noise-opacity: .55;        
     }
 }
 
