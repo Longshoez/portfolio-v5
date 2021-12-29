@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavigationBar from './Components/NavigationBar'
 import Background from './Components/Background'
 import Button from './Components/Button'
@@ -9,10 +9,15 @@ import './App.sass'
 import './Components/sBackground.sass'
 import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
+import './Components/responsiveMobile.css'
 
 import pic from './resources/profile-pic.jpg'
 
 function App() {    
+
+  useEffect(()=>{
+   console.log("https://fontawesome.com/license")
+  }, []) 
 
   return (
     <div className="App">
