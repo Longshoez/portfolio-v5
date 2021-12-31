@@ -13,7 +13,7 @@ import './Components/responsiveMobile.sass'
 
 import pic from './resources/profile-pic.jpg'
 import Icon from './Components/Icon'
-import { isMobile, MobileView, BrowserView } from 'react-device-detect'
+import { isMobile, MobileView } from 'react-device-detect'
 
 function App() {    
 
@@ -26,21 +26,20 @@ function App() {
   const defaultStyle1 = "section mainContent"
   const defaultStyle2 = "section aboutContent"  
 
-  return (
+  return (    
+
     <div className="App">
 
         <div className='content'>
         <NavigationBar />
 
         <section className={isMobile ? `mobileSections ${defaultStyle1}` : `${defaultStyle1}`} id="home">
-          <BrowserView>          
-            {/**work on this, too many ands */}
-            <h1>I design, code and <br /> launch Websites and <br /> apps, amongst other <br />things.</h1>            
-          </BrowserView>
 
-          <MobileView>
-            <h1>I design, code, <br />launch Websites <br /> and apps, amongst other things.</h1>            
-          </MobileView>
+        {isMobile ? (
+          <h1>I design, code, <br />launch Websites <br /> and apps, amongst other things.</h1>            
+        ) : (
+          <h1>I design, code and <br /> launch Websites and <br /> apps, amongst other <br />things.</h1>            
+        )}           
           
           <Button message="Get in touch!" icon="envelope" link="mailto:gabrielalejandro.br99@gmail.com?subject=I'd like to schedule a meeting&body=First we'd like for you to tell us about you or your project"/>
           <MobileView>                                                
