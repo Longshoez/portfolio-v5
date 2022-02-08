@@ -1,25 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './Button'
 import './sCarousel.sass'
-import barbershop from '../resources/carousel-pics/barbershop.png'
+import 'animate.css';
 
-const CCarousel = () => {
-    return (
-        <div className="carousel">
-            <div className="data">
-            <h1>Mende’z Barbershop</h1>
-            <p>I designed the website for a local barbershop, where they could showcase their services, the bigger picture was to develop an appointment system that would double as an ecomerce solution...</p>
-                <div className="c-buttons">
-                    <Button message={"more"} icon={"plus"} size="small"/>
-                    <Button message={"working demo"} icon={"open"} size="small" link="https://barbershop-git-designgabriel-edsen.vercel.app/" />
-                    <Button message={"previous"} icon={"chevron-left"} lean={"left"} size="small" />
-                    <Button message={"next proyect"} icon={"chevron-right"} size="small" />
-                </div>
-            </div>
-            <img src={barbershop} alt="" />
-        </div>
-            
-    )
+
+const CCarousel = ({items, time = 1000}) => {
+  
+  const [count, setCount] = useState(0)
+
+  setTimeout(() => {
+    count <= items.length -2 ? setCount(count +1) : setCount(0) //why it has to be -2?     
+  }, time);
+
+  return (
+      <div className="carousel">
+          <div className="data">
+          <h1>{items[count].name}</h1>
+          <p>{items[count].dscription}</p>
+              <div className="c-buttons">
+                  <Button message={"more"} icon={"plus"} size="small"/>
+                  <Button state={items[count].status ? "" : "deactivated"} message={"working demo"} icon={"open"} size="small" link={items[count].status && items[count].link}/>
+                  <Button message={"previous"} icon={"chevron-left"} lean={"left"} size="small" />
+                  <Button message={"next proyect"} icon={"chevron-right"} size="small"/>
+              </div>          
+          </div>
+          <div className='image-container'>
+            <p>{items[count].id} / {items.length}</p>
+            <img src={items[count].image} alt="" />
+          </div>
+      </div>
+          
+  )
 }
 
 export default CCarousel

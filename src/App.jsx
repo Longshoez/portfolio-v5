@@ -10,6 +10,7 @@ import './Components/sBackground.sass'
 import './Components/sAbout.sass'
 import './Components/sNavigationBar.sass'
 import './Components/responsiveMobile.sass'
+import projects from './projects'
 
 import pic from './resources/profile-pic.jpg'
 import Icon from './Components/Icon'
@@ -61,7 +62,7 @@ function App() {
         </section>
 
         <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="work">
-          <CCarousel></CCarousel>
+          <CCarousel items={projects} time={7000} />
         </section>
 
         <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="contact">

@@ -3,12 +3,11 @@ import { isMobile, BrowserView, MobileView } from 'react-device-detect'
 import '../Components/sButton.sass'
 import '../Components/responsiveMobile.sass'
 
-const Button = (props) => {
-
-    let iconLean = props.lean
+const Button = ({message, icon, lean, size, link, state, onClick}) => {
+    let iconLean = lean
 
     const renderIcon = () => {
-        switch (props.icon) {
+        switch (icon) {
             case "chevron-right":
                 return (
                     <svg viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,30 +55,30 @@ const Button = (props) => {
 
     const openLink = (e) =>{
         e.preventDefault(); //prevents the origin page to load for some reason        
-        if (props.link) {            
-            window.open(props.link)
+        if (link) {            
+            window.open(link)
         }else{
             console.log("Nothin to open")
         }
         
     }
 
-/*    const smallBtnResponsive = `${props.size}BtnMobile`
+/*    const smallBtnResponsive = `${size}BtnMobile`
     const defaultBtnStyle = `btn ${smallBtnResponsive}` */
 
-    /*{isMobile ? `mobileBtn ${defaultBtnStyle}` : `${props.size}`}  */
+    /*{isMobile ? `mobileBtn ${defaultBtnStyle}` : `${size}`}  */
 
     return (        
 
         iconLean === 'right' ? (
-            <div className={`btn ${props.size}`} onClick={openLink}>
-                <p>{props.message}</p>
-                {renderIcon(props.icon)}
+            <div className={`btn ${size} ${state}`} onClick={onClick}>
+                <p>{message}</p>
+                {renderIcon(icon)}
             </div>         
         ) : (
-            <div className={`btn ${props.size}`} onClick={openLink}>
-                {renderIcon(props.icon)}
-                <p>{props.message}</p>
+            <div className={`btn ${size} ${state}`} onClick={openLink}>
+                {renderIcon(icon)}
+                <p>{message}</p>
             </div>
         )
     )
@@ -91,6 +90,8 @@ Button.defaultProps = {
     lean: "right",
     size: "",
     link: "",
+    state: "",
+    onClick: "",
 }
 
 export default Button
