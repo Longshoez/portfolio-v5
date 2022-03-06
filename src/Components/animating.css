@@ -1,0 +1,15 @@
+.slide{
+  animation-name: nextSlide;
+  animation-duration: 2s;
+}
+
+@keyframes nextSlide{
+  from{
+    transform: translateX(10%);
+    opacity: .5;
+  }
+  to{
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
