@@ -15,7 +15,7 @@ const CCarousel = ({items, time = 1000}) => {
 
   useEffect(() => {    
     setAnimating(!animating)
-    console.log(count, animating)        
+    console.log(count, animating)
   }, [count])
   
   //make a timer and set animating to true if time == 0 then to false quickly so it launches only one time
