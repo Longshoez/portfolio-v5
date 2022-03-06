@@ -45,7 +45,7 @@ function App() {
           <Button message="Get in touch!" icon="envelope" link="mailto:gabrielalejandro.br99@gmail.com?subject=I'd like to schedule a meeting&body=First we'd like for you to tell us about you or your project"/>
           <MobileView>                                                
             <div style={{listStyle: 'none'}} className='arrowDown' href="#about">
-              <Icon icon="Arrow Down" to oltip="Read More" link="" hasBorder={false}/>              
+              <Icon icon="Arrow Down" tooltip="Read More" link="" hasBorder={false}/>              
             </div>
           </MobileView>
 
@@ -62,7 +62,7 @@ function App() {
         </section>
 
         <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="work">
-          <CCarousel items={projects} time={7000} />
+          <CCarousel items={projects} time={2000} />
         </section>
 
         <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="contact">

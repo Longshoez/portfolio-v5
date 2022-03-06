@@ -4,8 +4,8 @@ import '../Components/sButton.sass'
 import '../Components/responsiveMobile.sass'
 
 const Button = ({message, icon, lean, size, link, state, onClick}) => {
-    let iconLean = lean
 
+    let iconLean = lean
     const renderIcon = () => {
         switch (icon) {
             case "chevron-right":
@@ -91,7 +91,7 @@ Button.defaultProps = {
     size: "",
     link: "",
     state: "",
-    onClick: "",
+    onClick: () => console.log('nothing'),
 }
 
 export default Button
