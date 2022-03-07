@@ -7,14 +7,19 @@ const CCarousel = ({items, time = 1000}) => {
   
   const [count, setCount] = useState(0)
   const [timer, setTimer] = useState(time)
-  const [animating, setAnimating] = useState(false)
+  const [animationTimer, setAnimationTimer] = useState(time /2)
+  const [animating, setAnimating] = useState(false)  
 
   setTimeout(() => {
-    count <= items.length -2 ? (setCount(count +1), setAnimating(false)) : (setCount(0), setAnimating(true)) //why it has to be -2?
+    count <= items.length -2 ? (setCount(count +1)) : (setCount(0)) //why it has to be -2?        
   }, time);
 
+  setTimeout(() => {
+        
+  }, animationTimer);
+    
   useEffect(() => {    
-    setAnimating(!animating)
+    setAnimating(!animating)    
     console.log(count, animating)
   }, [count])
   
@@ -33,7 +38,7 @@ const CCarousel = ({items, time = 1000}) => {
               <Button message={"next project"} icon={"chevron-right"} size="small"/>
           </div>
           </div>
-          <div className={animating ? "slide image-container" : 'image-container'}><p>{items[count].id} / {items.length}</p>
+          <div className={animating ? "slide image-container" : 'image-container'}>
             <img src={items[count].image} alt="" />
           </div>
       </div>

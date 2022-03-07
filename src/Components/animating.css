@@ -1,6 +1,6 @@
 .slide{
   animation-name: nextSlide;
-  animation-duration: 1s;  
+  animation-duration: .5s;  
 }
 
 @keyframes nextSlide{
