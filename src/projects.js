@@ -1,15 +1,15 @@
-// 'src/public/carousel-pics/barbershop.png',
-// 'src/public/carousel-pics/sntss.png',
-// 'src/public/carousel-pics/xpence.png',
-// 'src/public/carousel-pics/batushka.png',
-// 'src/public/carousel-pics/rnm.png',
-// 'src/public/carousel-pics/dashboard.png',
-// 'src/public/carousel-pics/esg.png',
-// 'src/public/carousel-pics/skl.png',
-// 'src/public/carousel-pics/portfolio.png',
-// 'src/public/carousel-pics/imperio.png',
-// 'src/public/carousel-pics/myseed.png',
-// 'src/public/carousel-pics/localfood.png',
+import image1 from './public/carousel-pics/barbershop.png'
+import image2 from './public/carousel-pics/sntss.png'
+import image3 from './public/carousel-pics/xpence.png'
+import image4 from './public/carousel-pics/batushka.png'
+import image5 from './public/carousel-pics/rnm.png'
+import image6 from './public/carousel-pics/dashboard.png'
+import image7 from './public/carousel-pics/esg.png'
+import image8 from './public/carousel-pics/skl.png'
+import image9 from './public/carousel-pics/portfolio.png'
+import image10 from './public/carousel-pics/imperio.png'
+import image11 from './public/carousel-pics/myseed.png'
+import image12 from './public/carousel-pics/localfood.png'
 
 
 const projects = [
@@ -20,7 +20,7 @@ const projects = [
     category: "Webapp",
     technology: "React",
     status: true, // if true link button is disabled- if true green light and live label
-    image: require('src/public/carousel-pics/barbershop.png'),
+    image: image1,
     link: "https://barbershop-git-designgabriel-edsen.vercel.app/"
   },
   {
@@ -30,7 +30,7 @@ const projects = [
     category: "Webapp",
     technology: "React",
     status: true,
-    image: require('src/public/carousel-pics/sntss.png'),
+    image: image2,
     link: "https://sntss.vercel.app/",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
     category: "Mobile app",
     technology: "Figma",
     status: false,
-    image: require('src/public/carousel-pics/xpence.png'),
+    image: image3,
     link: "https://www.figma.com/proto/zcOnk3umCS59nbtQAwpG6w/Money-app---colaboration-with-Emilio?node-id=0%3A1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=114%3A570",
   },
   {
@@ -50,7 +50,7 @@ const projects = [
     category: "Webapp",
     technology: "Figma",
     status: false,
-    image: require('src/public/carousel-pics/batushka.png'),
+    image: image4,
     link: "https://www.figma.com/proto/H2y7Jaxw7nCgNnqQvU13nE59/Batushka's-Fanmade-Website?node-id=5%3A0&starting-point-node-id=2%3A20",
   },
   {
@@ -60,7 +60,7 @@ const projects = [
     category: "Design",
     technology: "React",
     status: false,
-    image: require('src/public/carousel-pics/rnm.png'),
+    image: image5,
     link: "https://www.figma.com/proto/ZbjDIIdcyv0vxcwuqoG8VM/R%26M-Collab?node-id=35%3A434&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=35%3A434",
   },
   {
@@ -70,7 +70,7 @@ const projects = [
     category: "Design",
     technology: "Figma",
     status: false,
-    image: require('src/public/carousel-pics/dashboard.png'),
+    image: image6,
     link: "",
   },
   {
@@ -80,7 +80,7 @@ const projects = [
     category: "Webapp",
     technology: "Figma",
     status: false,
-    image: require('src/public/carousel-pics/esg.png'),
+    image: image7,
     link: "",
   },
   {
@@ -90,7 +90,7 @@ const projects = [
     category: "PWA",
     technology: "React",
     status: false,
-    image: require('src/public/carousel-pics/skl.png'),
+    image: image8,
     link: "",
   },
   {
@@ -100,7 +100,7 @@ const projects = [
     category: "Webapp",
     technology: "React",
     status: false,
-    image: require('src/public/carousel-pics/portfolio.png'),
+    image: image9,
     link: "https://bit.ly/g43ri3ldesign",
   },
   {
@@ -110,7 +110,7 @@ const projects = [
     category: "Website",
     technology: "React",
     status: false,
-    image: require('src/public/carousel-pics/imperio.png'),
+    image: image10,
     link: "",
   },
   {
@@ -120,7 +120,7 @@ const projects = [
     category: "PWA",
     technology: "React",
     status: false,
-    image: require('src/public/carousel-pics/myseed.png'),
+    image: image11,
     link: "https://www.figma.com/proto/4TfLC6cl5BN3o9j53jwsvf/mySeed?node-id=34%3A5386&scaling=scale-down&page-id=0%3A1&starting-point-node-id=34%3A5386&show-proto-sidebar=1",
   },
   {
@@ -130,7 +130,7 @@ const projects = [
     category: "Mobile app",
     technology: "React Native",
     status: false,
-    image: require('src/public/carousel-pics/localfood.png'),
+    image: image12,
     link: "https://www.figma.com/proto/F6zaRiwRr5KjaRa3CWzHG6/LocalFood.?node-id=101%3A252&scaling=scale-down&page-id=101%3A48&starting-point-node-id=103%3A306",
   },
 ]
