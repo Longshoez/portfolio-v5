@@ -53,8 +53,8 @@ const Button = ({message, icon, lean, size, link, state, onClick}) => {
         }
     }
 
-    const openLink = (e) =>{
-        e.preventDefault(); //prevents the origin page to load for some reason        
+    const openLink = () =>{
+        // e.preventDefault(); //prevents the origin page to load for some reason        
         if (link) {            
             window.open(link)
         }else{
