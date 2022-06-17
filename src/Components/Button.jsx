@@ -69,9 +69,8 @@ const Button = ({message, icon, lean, size, link, state, onClick}) => {
     /*{isMobile ? `mobileBtn ${defaultBtnStyle}` : `${size}`}  */
 
     return (        
-
         iconLean === 'right' ? (
-            <div className={`btn ${size} ${state}`} onClick={onClick}>
+            <div className={`btn ${size} ${state}`} onClick={() => onClick}>
                 <p>{message}</p>
                 {renderIcon(icon)}
             </div>         
