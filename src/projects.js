@@ -31,7 +31,7 @@ const projects = [
     technology: "React",
     status: true,
     image: image2,
-    link: "https://sntss.vercel.app/",
+    link: "https://sntss.vercel.app",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const projects = [
   {
     id: 4,
     name: "Batushka fanpage",
-    dscription: "A fan memeber of the r/Batushka subreddit and i wanted to make a website where he could post his music and new social networs, for unknown reasons the other fan decided to go with a more basic design.",
+    dscription: "A fan memeber of the r/Batushka subreddit and i wanted to make a website where tha artist could post his music and new social networs..",
     category: "Webapp",
     technology: "Figma",
     status: false,
@@ -56,7 +56,7 @@ const projects = [
   {
     id: 5,
     name: "Rick & Morty Characters",
-    dscription: "A Colleage of mine asked me to design a User Interface for a practice project he had in mind, a simple front-end for to go with an existing api. i thought it was a good practice projects so im giving it a go.",
+    dscription: "A Colleage of mine asked me to design an User Interface for a project he had in mind, he wanted to practice working with apis and needed a good-looking UI to put the project in his portfolio.",
     category: "Design",
     technology: "React",
     status: false,
@@ -66,7 +66,7 @@ const projects = [
   {
     id: 6,
     name: "Rental system dashboard",
-    dscription: "My team and i were tasked to develop a washing machine rental system, i was in charge of the UI design and frontend, sadly the project got canceled a month later and i kept the design for my portfolio.",
+    dscription: "My team and i were tasked to develop a washing machine rental dashboard, i was in charge of the UI design and frontend, the project got cancelled a month into the development process.",
     category: "Design",
     technology: "Figma",
     status: false,
@@ -76,7 +76,7 @@ const projects = [
   {
     id: 7,
     name: "ESG website",
-    dscription: "The first semester of college 2 other friends and i decided to join forces to develop applications as freelancers, the project is still going on but as of today it works as a collective, we share dev articles and help each other on our own projects.",
+    dscription: "The first semester of college a couple of friends and i decided to get together to develop applications as freelancers and personal projects, that was 4 years ago, as of today our small group is more of a collective where we share dev articles and help each other on our own projects.",
     category: "Webapp",
     technology: "Figma",
     status: false,
@@ -86,7 +86,7 @@ const projects = [
   {
     id: 8,
     name: "Skl.",
-    dscription: "The idea of a class-manager was born when I grew tired of using my College's student site. I needed something that kept me up to date with my classes, where I could easily view the progress of my courses, announcements and more.",
+    dscription: "The idea of a class-manager was born when I grew tired of using my College's site for tracking asignments and news. I needed something that kept me up to date with my classes and didnt looked like it was designed in the 90s, where I could easily view the progress of my courses, announcements and more.",
     category: "PWA",
     technology: "React",
     status: false,
@@ -96,7 +96,7 @@ const projects = [
   {
     id: 9,
     name: "Portfolio",
-    dscription: "I coded, designed and launched this website for showcasing my skills, projects and contact information, im an independent sel-taught developer from Colima, Mex. I use React and React Native for my projects amongst other tech tools.",
+    dscription: "I designed, developed and launched this website for sharing my skills, projects and contact information, im an independent sel-taught developer from Colima, Mex. I use React and React Native for my projects amongst other tech tools.",
     category: "Webapp",
     technology: "React",
     status: false,
@@ -106,7 +106,7 @@ const projects = [
   {
     id: 10,
     name: "Imperium Interactive",
-    dscription: "Imperium interactive is the name of my gaming and motion developement projects, its still an early project of mine which i haven't really put time into it",
+    dscription: "Imperium interactive is the name of my gaming developement project, in the future i'd like to use this website for showcasing games, interactive experiences, motion design and other visual experiments.",
     category: "Website",
     technology: "React",
     status: false,
@@ -116,7 +116,7 @@ const projects = [
   {
     id: 11,
     name: "MySeed",
-    dscription: "A couple of years ago i started to enjoy from buying Local made products, these people tend to advertise on social networks, and their workflow isnt the best, so im developing a customizable landing page and order system.",
+    dscription: "MySeed is a social network hub / ecomerce / catalogue / landing page / event tracker, intended for small businesses and influencers where they will be able to showcase and sell their products, create events like giveaways and polls, and keep their fanbase up to date with their latests posts.",
     category: "PWA",
     technology: "React",
     status: false,
@@ -126,7 +126,7 @@ const projects = [
   {
     id: 12,
     name: "LocalFood",
-    dscription: "This is my graduation project from BrightCoders, my team and i are developing a local order system for local shops in React Native (Mobile app), integrating firebase for the authorization systema and the data storage.",
+    dscription: "This was my graduation project from the BrightCoders Rect Native bootcamp by Magmalabs, my team and i developed a Rappi-like application where users can sign up their Food businesses and products for users to Place orders, intended for small local businesses in our town.",
     category: "Mobile app",
     technology: "React Native",
     status: false,

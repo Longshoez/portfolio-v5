@@ -76,7 +76,7 @@ const Button = ({message, icon, lean, size, link, state, onClick}) => {
                 {renderIcon(icon)}
             </div>         
         ) : (
-            <div className={`btn ${size} ${state}`} onClick={openLink}>
+            <div className={`btn ${size} ${state}`} onClick={() => openLink}>
                 {renderIcon(icon)}
                 <p>{message}</p>
             </div>

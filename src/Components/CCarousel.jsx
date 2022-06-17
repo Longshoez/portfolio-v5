@@ -30,7 +30,7 @@ const CCarousel = ({ items, time = 1000 }) => {
         <p className={animating ? "slide" : ''}>{items[count].dscription}</p>
         <div className="c-buttons">
           <Button message={"more"} icon={"plus"} size="small" />
-          <Button state={items[count].status ? "" : "deactivated"} message={"working demo"} icon={"open"} size="small" link={items[count].status && items[count].link} />
+          <Button state={items[count].status ? "" : "deactivated"} message={items[count].status ? "Working demo" : "not available"} icon={"open"} size="small" link={items[count].status && items[count].link} />
           <Button message={"previous"} icon={"chevron-left"} lean={"left"} size="small" />
           <Button message={"next project"} icon={"chevron-right"} size="small" />
         </div>
