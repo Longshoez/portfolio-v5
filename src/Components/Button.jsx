@@ -70,7 +70,7 @@ const Button = ({message, icon, lean, size, link, state, onClick}) => {
 
     return (        
         iconLean === 'right' ? (
-            <div className={`btn ${size} ${state}`} onClick={onClick}>
+            <div className={`btn ${size} ${state}`} onClick={openLink}>
                 <p>{message}</p>
                 {renderIcon(icon)}
             </div>         
