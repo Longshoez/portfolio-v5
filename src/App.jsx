@@ -62,7 +62,7 @@ function App() {
         </section>
 
         <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="work">
-          <CCarousel items={projects} time={6000} />
+          <CCarousel items={projects} time={9000} />
         </section>
 
         <section className={isMobile ? `mobileSections ${defaultStyle2}` : `${defaultStyle2}`} id="contact">
