@@ -27,11 +27,12 @@ const AboutBioCard = (props) => {
                 </div>
                 <div className="dynamicCounterContainer">
                     <AboutDynamicCounter count="5" label="Colaborations" />
-                    <AboutDynamicCounter count="25" label="Designs" />
-                    <AboutDynamicCounter count="5" label="Websites" />
+                    {/* <AboutDynamicCounter count="25" label="Designs" /> */}
+                    {/* <AboutDynamicCounter count="" label="Proyects" /> */}
+                    <AboutDynamicCounter count="3" label="Websites" />
                     <AboutDynamicCounter count="1" label="App" />
                     <AboutDynamicCounter count="1y+" label="Experience" />
-                    <AboutDynamicCounter count="2" label="Live projects" />
+                    <AboutDynamicCounter count="1" label="Live projects" />
                 </div>
                 <div>
                     <h1>Tech i use on my projects</h1>
@@ -46,13 +47,13 @@ const AboutBioCard = (props) => {
                         <Icon icon="Firebase" />
                     </div>
                     <div className="techOnProjects">
-                        <Icon icon="Bootstrap" />
+                        {/* <Icon icon="Bootstrap" /> */}
                         <Icon icon="Figma" />
                         <Icon icon="Blender" />
-                        <Icon icon="Wordpress" />
+                        {/* <Icon icon="Wordpress" /> */}
                         <Icon icon="Java" />
-                        <Icon icon="Electron" />
-                        <Icon icon="Spark ar" />
+                        {/* <Icon icon="Electron" /> */}
+                        {/* <Icon icon="Spark ar" /> */}
                         <Icon icon="Adobe XD" />
                         <Icon icon="Photoshop" />
                     </div>
