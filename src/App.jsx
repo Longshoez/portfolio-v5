@@ -21,7 +21,8 @@ function App() {
   useEffect(()=>{
     console.log("https://fontawesome.com/license")
     console.log(isMobile)
-    isMobile ? alert("This is a work in progress") : null
+    // isMobile ? alert("This is a work in progress") : null
+    alert("This website is still a work in progress, mobile version isnt't working and some links might not work as intended.")
   }, []) 
 
   const defaultStyle1 = "section mainContent"
